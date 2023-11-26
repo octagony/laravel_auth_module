@@ -11,7 +11,7 @@
 <body>
     <header class="w-full">
         <div class="flex justify-end gap-4 py-2 px-4">
-            <a href="" class="border p-2 bg-red-400 rounded-xl text-white">Log out</a>
+            <a href={{ route('welcome')  }} class="border p-2 bg-red-400 rounded-xl text-white">Log out</a>
         </div>
     </header>
     <main>
