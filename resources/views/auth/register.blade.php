@@ -19,7 +19,11 @@
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
             <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign Up</h2>
         </div>
-
+        <ul>
+            @foreach($errors->all() as $item)
+            <li>{{ $item }}</li>
+            @endforeach
+        </ul>
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form class="space-y-6" action={{ route('register') }} novalidate method="POST">
                 @csrf
