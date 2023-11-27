@@ -13,7 +13,6 @@ class RegisterController extends Controller
 {
     public function create()
     {
-        dd(session('errors'));
         return view('auth.register');
     }
 
